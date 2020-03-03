@@ -1,0 +1,690 @@
+/*!
+Description: Master Style Sheet
+Author: Charlie Beavers
+Version: 1.0
+*/
+
+@import "reset.css";
+@import "typography.css";
+@import "forms.css";
+
+body {
+    background: rgb(240,240,240);
+}
+
+/* ----- HOMEPAGE ----- */
+
+header {
+    width: 100%;
+    padding: 3vh 0;
+    text-align: center;
+    background: #2c2727;
+    background: linear-gradient(90deg, rgba(44,39,39,1) 0%, rgba(62,57,57,1) 100%);
+}
+
+header img {
+    width: 25%;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+
+header img:hover {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+}
+
+button.reg {
+    position: absolute;
+    top: 6vw;
+    right: 3vw;
+    background: none;
+    border: none;
+}
+
+button.book {
+    position: absolute;
+    top: 14vw;
+    right: 3vw;
+    background: none;
+    border: none;
+}
+
+button a {
+    text-transform: uppercase;
+    background-color: rgb(44,39,39);
+    padding: 1.2vw 3vw;
+    border: 1.5px solid rgb(255,255,255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+button a:hover {
+    color: rgb(255,117,23);
+    border: 2px solid rgb(255,117,23);
+    font-weight: bold;
+}
+
+button a:active {
+    border: 2px solid rgb(255,117,23);
+    box-shadow: none;
+}
+
+nav {
+    width: 100%;
+    padding: 3vh 0;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .5);
+    background: #2c2727;
+    background: linear-gradient(-90deg, rgba(44,39,39,1) 0%, rgba(62,57,57,1) 100%);
+}
+
+nav a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 4vw;
+}
+
+nav a:hover {
+    color: rgb(255,117,23);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+nav a:active {
+    color: rgb(177, 80, 16);
+}
+
+section {
+    width: 65%;
+    margin: 5% 0;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section article img {
+    width: 100%;
+    margin: 2.5% 0;
+}
+
+section article p {
+    padding: 1vw 3vw;
+    text-align: justify;
+    line-height: 3vw;
+}
+
+.icons {
+    display: inline-block;
+    width: 25%;
+    padding: 1vw 0 2vw;
+    margin: 2vw 1vw 0;
+    background: rgb(220,220,220);
+    background: linear-gradient(180deg, rgb(240,240,240) 0%, rgb(255,255,255) 10%, rgb(240,240,240) 100%);
+}
+
+.icons img {
+    width: 30%;
+    visibility: hidden;
+}
+
+.icons:hover img {
+    visibility: visible;
+}
+
+.icons p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(255,117,23);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+aside {
+    width: 30%;
+    margin: 5% 0;
+    float: right;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+aside h3, aside h4 {
+    padding-right: 2vw;
+    background-color: rgb(255,117,23);
+    color: rgb(240,240,240);
+    padding: 1vw 2vw;
+    text-transform: uppercase;
+}
+
+.contactText {
+    margin: .5vw 2vw 3vw 0;
+    font-size: 1.5vw;
+    list-style-type: none;
+    color: rgb(62,57,57);
+}
+
+.contactTitle {
+    color: rgb(255,117,23);
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin: 2vw 2vw 0 0; 
+    letter-spacing: .1vw;;
+    list-style-type: none;
+}
+
+aside ul li {
+    list-style-type: none; 
+    margin: .5vw 2vw 2vw 0;
+}
+
+.social {
+    width: 12%;
+    opacity: .5;
+}
+
+aside form {
+    font-size: 1.7vw;
+    margin-right: 2vw;
+}
+
+.formTitle {
+    color: rgb(255,117,23);
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin: 2vw 0 .5vw 0; 
+    letter-spacing: .1vw;
+}
+
+aside form input, aside form textarea {
+    width: 85%;
+    height: 3vw;
+    font-size: 1.5vw;
+    padding: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 2px rgba(62,57,57,1);
+}
+
+aside form input:focus, aside form textarea:focus {
+    background-color: rgba(255,117,23,.05);
+}
+
+aside form textarea {
+    height: 10vw;
+    padding-top: 5px;
+}
+
+.submit {
+    width: 50%;
+    margin: 2vw 0 2vw 0;
+    background-color: rgb(255,255,255);
+    color: rgb(255,117,23);
+}
+
+.submit:hover {
+    background-color: rgb(255,117,23);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+.submit:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+footer {
+    clear: both;
+    display: block;
+    background-color: rgb(220,220,220);
+    text-align: center;
+    padding: 2vw;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+/* ---------- About ---------- */
+
+.aboutFig {
+    width: 100%;
+    text-align: left;
+    margin: 2vw 0 2vw 2vw;
+    display: inline-block;
+}
+
+figcaption {
+    width: 100%;
+    color: rgb(255,117,23);
+    font-size: 2vw;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1vw 0;
+    font-weight: bold;
+ }
+
+.avatar {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+}
+
+figure ul {
+    display: inline-block;
+    width: 70%;
+    margin: 1vw 0 0 2vw;;
+    vertical-align: top;
+}
+
+figure ul li {
+    font-size: 1.6vw;
+    padding: .6vw;
+    list-style-type: none;
+}
+
+/* ---------- Services ---------- */
+
+.column {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-gap: 5vw;
+    -webkit-column-gap: 5vw; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5vw; /* Firefox */
+}
+
+.column span {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(255,117,23);
+}
+
+/* ---------- Information ---------- */
+
+ul.areaList, ul.equipList {
+    font-size: 1.6vw;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+ul.equipList {
+    margin-left: 5vw;
+    padding: 1vw 0;
+}
+
+ul.equipList li {
+    padding: 1vw 0;
+}
+
+ul.equipList li span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.insurance {
+    height: 10vw;
+    background-image: url("images/insurance.png");
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    margin: 3vw 0 0 3vw;
+}
+
+/* ---------- Booking ---------- */
+
+table {
+    width: 90%;
+    margin: 2vw 0 4vh 3vw;
+    text-align: left;
+    font-size: 1.6vw;   
+}
+
+table tr th:first-child, table tr td:first-child {
+    width: 50%;
+}
+
+table tr th:last-child , table tr td:last-child {
+    width: 20%;
+    text-align: center;
+    padding: 1vw 0;
+}
+
+table tr th {
+    text-transform: uppercase;
+    background: #2c2727;
+    background: linear-gradient(-90deg, rgba(44,39,39,.75) 0%, rgba(62,57,57,.75) 100%);
+    color: rgb(255,255,255);
+    padding: 1vw;
+}
+
+table tr td {
+    padding: .5vw 1vw;
+}
+
+table tr td span {
+    font-size: 1.3vw;
+    color: rgb(255,117,23);
+}
+
+table tr td a {
+    text-decoration: none;
+    border: 1px solid rgb(62,57,57);
+    padding: .5vw 2vw;
+    color: rgb(62,57,57);
+    background-color: rgb(255,255,255);
+}
+
+table tr td a:hover {
+    color: rgb(255,117,23);
+    border: 2px solid rgb(255,117,23);
+    font-weight: bold;
+}
+
+ul.TandCs {
+    font-size: 1.6vw;
+    text-align: left;
+    list-style-type: circle;
+    margin: 3vw 3vw 0 6vw;
+}
+
+ul.TandCs li {
+    margin: 2vw 0;
+}
+
+/* ---------- Registration ---------- */
+
+.regHead {
+    background: #2c2727;
+    background: linear-gradient(-90deg, rgba(44,39,39,.75) 0%, rgba(62,57,57,.75) 100%);
+    color: rgb(240,240,240);
+    padding: 1vw 0 1vw 3vw;
+    margin: 1vw 0;
+    font-weight: normal;
+    box-shadow: none;
+    text-align: left;
+}
+
+#reg_form {
+    text-align: left;
+}
+
+.formReg {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 1vw 0 1vw 3vw;
+    width: 30%;
+}
+
+article form input, article form textarea {
+    margin: 1vw;
+    width: 50%;
+    height: 3vw;
+    font-size: 1.5vw;
+    padding: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 2px rgba(62,57,57,1);
+}
+
+article form input:focus, article form textarea:focus {
+    background-color: rgba(255,117,23,.05);
+}
+
+article form textarea {
+    height: 12vw;
+    padding-top: 5px;
+}
+
+.reg_services_form {
+    margin-left: 3vw;
+}
+
+.formRegServices {
+    margin-left: 0;
+    width: 100%;
+}
+
+input#reg_services, input#reg_days, input#reg_newsletter {
+    width: auto;
+    box-shadow: none;
+    margin: auto 0 auto 5vw;
+    padding: 0;
+    cursor: pointer;
+}
+
+.reg_text {
+    display: inline-block;
+    width: 35%;
+    padding: 0;
+    margin: 0 0 0 1vw;
+    vertical-align: top;
+}
+
+.regSubmit, .regSubmit:focus {
+    background-color: rgb(44,39,39);
+    color: rgb(255,255,255);
+    width: 30%;
+    float: right;
+}
+
+/* ---------- Viewport Sizes ---------- */
+
+@media screen and (max-width: 768px) {
+
+/* ---------- Home ---------- */
+
+.wrapper {
+    width: 100%;
+    height: 38vw;
+    background-color: rgb(62,57,57);
+}
+
+header {
+    width: 60%;
+    float: left;
+    background: none;
+}
+
+header img {
+    width: 63%;
+}
+
+button.reg {
+    left: 30vw;
+    top: 32vw;
+}
+
+button.book {
+    left: 9vw;
+    top: 32vw;
+}
+
+nav {
+    width:40%;
+    float: right;
+    background: none;
+    box-shadow: none;
+}
+
+nav a {
+    display: block;
+    padding: 2.9vw 0;
+    border-bottom: .1vw solid rgb(220,220,220); 
+}
+
+nav a:first-child {
+    border-top: .1vw solid rgb(220,220,220);
+}
+
+section {
+    width: 100%;
+}
+
+section article p {
+    width: 90%;
+    text-align: center;
+    margin: 2vw auto;
+}
+
+.icons p {
+    margin: 1vw auto;
+}
+
+aside {
+    width: 100%;
+    text-align: center;
+}
+
+aside h3, aside h4 {
+    padding: 1vw;
+}
+
+.contactText, .contactTitle, .formTitle {
+    font-size: 2.5vw;
+    margin: 2.5vw 0 2vw;
+}
+
+.social {
+    width: 5%;
+}
+
+aside form input, aside form textarea {
+    width: 70%;
+    height: 4vw;
+}
+
+aside form textarea {
+    height: 10vw;
+}
+
+.submit {
+    width: 30%;
+    font-size: 2.5vw;
+    margin: 4vw 0 0;
+}
+
+/* ---------- About ---------- */
+
+figure ul li {
+    font-size: 2.2vw;
+}
+
+figcaption {
+    font-size: 2.5vw;
+}
+
+/* ---------- Services ---------- */
+
+.column {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+}
+
+/* ---------- Information ---------- */
+
+ul.areaList, ul.equipList {
+    margin-left: 0;
+}
+
+ul.areaList li, ul.equipList li {
+    font-size: 2.2vw;
+    list-style-type: none;
+    text-align: center;
+}
+
+div.insurance {
+    background-position-x: 50%;
+    margin-left: 0;
+}
+
+ul.equipList li {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+/* ---------- Booking ---------- */
+
+table {
+    font-size: 2.2vw;   
+}
+
+table tr td span {
+    font-size: 1.8vw;
+}
+
+ul.TandCs {
+    font-size: 2.2vw;
+}
+
+/* ---------- Registration ---------- */
+
+.regHead {
+    font-size: 2.2vw;
+    text-align: center;
+    padding: 2vw 0;
+}
+
+#reg_form {
+    text-align: center;
+}
+
+.formReg {
+    display: inline-block;
+    margin: 1vw 0;
+    width: 100%;
+    font-size: 2.2vw;
+}
+
+article form input, article form textarea {
+    width: 70%;
+    height: 4vw;
+    text-align: center;
+}
+
+article form textarea {
+    height: 10vw;
+}
+
+.reg_services_form {
+    margin: 0;
+}
+
+.formRegServices {
+    margin: 3vw 0 0 13vw;
+    width: 100%;
+    text-align: left;
+}
+
+input#reg_services {
+    margin-left: 34%;
+}
+
+input#reg_days {
+    margin-left: 52%;
+}
+
+input#reg_newsletter {
+    height: 15px;
+    width: 12px;
+    margin-left: 65%;
+}
+
+.reg_text {
+    text-align: left;
+    width: 30%;
+}
+
+.regSubmit, .regSubmit:focus {
+    display: inline-block;
+    width: 50%;
+    float: none;
+    font-size: 2.5vw;
+    height: 5vw;
+}
+
+}

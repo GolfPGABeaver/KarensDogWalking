@@ -1,0 +1,67 @@
+/*!
+Description: Typography Style Sheet
+Author: Charlie Beavers
+Version: 1.0
+*/
+
+
+/* Imported font from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+
+body {
+    font-family: Montserrat, Geneva, Tahoma, sans-serif;
+}
+
+/* Banner Headlines */
+h1, h2 {
+    font-size: 2vw;
+    background: #2c2727;
+    background: linear-gradient(-90deg, rgba(44,39,39,1) 0%, rgba(62,57,57,1) 100%);
+    color: rgb(240,240,240);
+    padding: 2vw;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .5);
+}
+
+h3, h4 {
+    font-size: 1.7vw;
+}
+
+h6 {
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+/* Paragraphy Text */
+p {
+    font-size: 1.6vw;
+}
+
+/* Links and Buttons */
+a {
+    font-size: 1.7vw;
+}
+
+/* ---------- Viewport Sizes ---------- */
+
+@media screen and (max-width: 768px) {
+
+h1, h2 {
+    font-size: 3vw;
+}
+
+h3, h4 {
+    font-size: 2.5vw;
+}
+
+h6 {
+    font-size: 1.6vw;
+}
+
+/* Paragraphy Text */
+p {
+    font-size: 2.2vw;
+}
+
+}

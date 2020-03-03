@@ -1,0 +1,11 @@
+/*!
+Description: Forms Style Sheet
+Author: Charlie Beavers
+Version: 1.0
+*/
+
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
